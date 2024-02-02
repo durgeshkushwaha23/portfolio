@@ -75,6 +75,7 @@ body {
 }
 
 .page1 {
+     overflow: hidden;
     /* position: relative; */
     min-height: 110vh;
     width: 100%;
