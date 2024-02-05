@@ -1,7 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: gilroy;
 
 }
@@ -34,9 +42,15 @@ body {
     height: 6vw;
     width: 100%;
     background-color: var(--secondary-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .left #icon {
@@ -44,8 +58,12 @@ body {
 }
 
 .middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 4vw;
 
 }
@@ -75,7 +93,7 @@ body {
 }
 
 .page1 {
-     overflow: hidden;
+    overflow: hidden;
     /* position: relative; */
     min-height: 110vh;
     width: 100%;
@@ -125,8 +143,12 @@ body {
     width: 30%;
     margin-top: 1.4vw;
     margin-left: 4vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 1vw;
 }
 
@@ -155,10 +177,12 @@ i {
 }
 
 .right1 img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     height: 100%;
-    object-position: top;
+    -o-object-position: top;
+       object-position: top;
 }
 
 .page1-animation {
@@ -167,6 +191,8 @@ i {
     height: 13vh;
     width: 100%;
     /* background-color: #b53838; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     white-space: nowrap;
     gap: 4vw;
@@ -183,6 +209,8 @@ i {
     height: 13vh;
     width: 100%;
     /* background-color: #b53838; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     white-space: nowrap;
     gap: 4vw;
@@ -205,6 +233,8 @@ i {
     height: 130vh;
     width: 100%;
     background-color: var(--secondary-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: var(--primary-color);
     padding: 10vw 1vw;
@@ -233,6 +263,8 @@ i {
 
 
 .left2 .image-container .h1 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     color: rgb(1, 26, 255);
     margin-top: 5vw;
@@ -308,6 +340,8 @@ i {
 
 .till #skills {
     padding: 8px 20px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(62, 189, 206)), to(rgb(156, 222, 114)));
+    background: -o-linear-gradient(rgb(62, 189, 206), rgb(156, 222, 114));
     background: linear-gradient(rgb(62, 189, 206), rgb(156, 222, 114));
     font-size: 1.4vw;
     color: var(--primary-color);
@@ -411,9 +445,15 @@ i {
     text-align: center;
     font-size: 18px;
     background: var(--secondary-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
 }
 
@@ -421,7 +461,8 @@ i {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .autoplay-progress {
@@ -431,9 +472,15 @@ i {
     z-index: 10;
     width: 48px;
     height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-weight: bold;
     color: var(--swiper-theme-color);
 }
@@ -451,7 +498,9 @@ i {
     fill: none;
     stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
     stroke-dasharray: 125.6;
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
 }
 
 .elems {
@@ -465,13 +514,18 @@ i {
 img {
     height: 88%;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .innerbox {
-    justify-content: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     padding: 2px;
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: 95.4%;
     left: 5%;
@@ -513,6 +567,8 @@ img {
     margin-top: 2vw;
     height: 50%;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 8vw;
     /* background-color: #b53838; */
@@ -528,18 +584,24 @@ img {
 
 .page4 .booto a:hover {
     scale: 1.4;
+    -webkit-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
     transition: all ease 0.4s;
     color: blue;
 }
 
 .page4 h1:hover {
     opacity: 0;
+    -webkit-transition: ease-in 0.3s;
+    -o-transition: ease-in 0.3s;
     transition: ease-in 0.3s;
 }
 
 .nav a:hover {
     opacity: 0.7;
     font-size: 1.8vw;
+    -webkit-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
     transition: all ease 0.4s;
     color: rgb(0, 0, 255);
 
@@ -547,6 +609,8 @@ img {
 
 .nav button:hover {
     scale: 1.4;
+    -webkit-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
     transition: all ease 0.4s;
     color: rgb(101, 101, 223);
 }
@@ -554,6 +618,8 @@ img {
 .nav img:hover {
     scale: 1.4;
     opacity: 0.5;
+    -webkit-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
     transition: all ease 0.4s;
     color: rgb(101, 101, 223);
 }
@@ -561,6 +627,8 @@ img {
 .page1 button:hover {
     color: blue;
     scale: 1.2;
+    -webkit-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
     transition: all ease 0.4s;
     opacity: 0.7;
     background-color: rgb(229, 154, 229);
@@ -568,11 +636,15 @@ img {
 
 .image-container img:hover {
     scale: 1.4;
+    -webkit-transition: all ease 0.2s;
+    -o-transition: all ease 0.2s;
     transition: all ease 0.2s;
 }
 
 .left2 .a a:hover {
     font-size: 2.1vw;
+    -webkit-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
     transition: all ease 0.4s;
     color: yellow;
 }
@@ -580,10 +652,17 @@ img {
 @media (max-width:600px) {
     .nav .middle {
         /* display: none; */
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: end;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: end;
         /* justify-content: end; */
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         margin-left: 60vw;
         line-height: 1px;
         margin-top: 40vw;
@@ -624,8 +703,13 @@ img {
     }
 
     .page2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         /* gap: 5vw; */
         text-align: center;
     }
