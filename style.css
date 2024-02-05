@@ -27,7 +27,7 @@ body {
 
 :root {
     --primary-color: #000000;
-    --secondary-color: #cccbcbcd;
+    --secondary-color: #ffffffcd;
 
 
 }
@@ -283,6 +283,7 @@ i {
     margin-bottom: 1vw;
     margin-left: 2vw;
     opacity: 0;
+    
 }
 
 .left2 a {
@@ -710,28 +711,74 @@ img {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        /* gap: 5vw; */
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         text-align: center;
     }
-
-    .page2 .right2 {
-        margin-top: -90vw;
-        margin-left: 23vw;
+    .page2 .left2{
+        width: 80%;
+        height: 20%;
+        margin-top: -90vh;
+        margin-left: 10%;
+        /* color: rgb(255, 255, 255); */
+    }
+    .page2 .left2 h3{
+        opacity: 1;
+        /* color: black; */
     }
 
-    .page2 .right2 h1 {
-        margin-right: 60vw;
+ .page2 .right2 {
+       opacity: 1;
+       width: 40vb;
+       height: 40vh;
+       /* background-color: aqua; */
+       margin-left: 6vw;
+       margin-top: 27vw;
     }
+  
+    .page2 .right2 .till{
+        width: 30vb;
+        height: 30vh;
+        margin-top: 2vh;
+        text-align: center;
+    }
+    .page2 .right2 .till p{
+        font-size: 2.5vw;
+      
+        padding-bottom: 5vw;
+    }
+    .page2 .right2 .till h2{
+            font-size: 2.1vw;
+            margin-top: 8vw;
+    }
+    .page2 .right2 .till h3{
+        font-size: 2.1vw;
+}
+.page2 .right2 .till h4{
+    font-size: 2.1vw;
+}
+.page2 .right2 .till h5{
+font-size: 2.1vw;
+}
+.page3 .test{
+    opacity: 1;
+}
+.page3{
+    /* background-color: aqua; */
+    margin-top: -140vw;
+    opacity: 1;
+}
 
     .right2 #skills {
-        padding: 2px 6px;
-        font-size: 5px;
+        padding: 6px 22px;
+        font-size: 8px;
     }
 
     .right2 #education {
-        padding: 2px 6px;
-        font-size: 5px;
-    }
+        padding: 6px 22px;
+        font-size: 8px;
+    } 
     .swiper{
         height: 90vw;
         width: 63vw;
@@ -764,6 +811,8 @@ img {
         font-size: 4vw;
     }
   
-
+    .page4{
+        margin-top: -40vw;
+    }    
 
 }
