@@ -34,6 +34,7 @@ ScrollTrigger.refresh();
 }
 locomotive();
 
+
 Shery.textAnimate(" .page1 h1" , {
 
     style: 1,
@@ -88,17 +89,37 @@ tl.from(".page1-animation1 h3", {
   }
 });
 
-tl.to(".page2 .left2 h1",{
+const screenWidth = window.innerWidth;
+ 
+if(screenWidth<600){
+  tl.to(".page2 .left2 h1",{
     opacity:1,
     scrollTrigger: {
       trigger: ".page2 .left2",
       scroller:"#main",
       // markers: true,
-      start: "top 60%",
+    
+      start: "top 100%",
       end: "top 30%",
       scrub:2,
     }
-})
+});}
+else{
+    tl.to(".page2 .left2 h1",{
+      opacity:1,
+      scrollTrigger: {
+        trigger: ".page2 .left2",
+        scroller:"#main",
+        // markers: true,
+        start: "top 60%",
+        end: "top 30%",
+        scrub:2,
+      }
+  })
+  }
+
+
+
 tl.to(".page2 .left2 h3",{
   opacity:1,
   scrollTrigger: {
