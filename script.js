@@ -20,20 +20,6 @@
 
 
 
-const locoScroll = new LocomotiveScroll({
-  el: document.querySelector(".smooth-scroll"),
-  smooth: false,
-  mobile: {
-      smooth: false
-  },
-  tablet: {
-      smooth: false
-  },
-  // Disable smooth scrolling for laptops/desktops
-  smoothMobile: false
-});
-
-
 
 
 
