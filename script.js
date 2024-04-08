@@ -1,25 +1,37 @@
 
 
-var locoScroll = new LocomotiveScroll({
+// var locoScroll = new LocomotiveScroll({
+//   el: document.querySelector(".smooth-scroll"),
+//   smooth: true,
+//   mobile: {
+//      smooth: true
+//  },
+//  tablet: {
+//      smooth: true
+//  }
+
+// });
+// var locoScroll = new LocomotiveScroll({
+//   el: document.querySelector(".smooth-scroll"),
+//   smooth: true
+// });
+
+
+
+
+
+const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".smooth-scroll"),
-  smooth: true,
+  smooth: false,
   mobile: {
-     smooth: true
- },
- tablet: {
-     smooth: true
- }
-
+      smooth: false
+  },
+  tablet: {
+      smooth: false
+  },
+  // Disable smooth scrolling for laptops/desktops
+  smoothMobile: false
 });
-var locoScroll = new LocomotiveScroll({
-  el: document.querySelector(".smooth-scroll"),
-  smooth: true
-});
-
-
-
-
-
 
 
 
